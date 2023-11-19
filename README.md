@@ -5,6 +5,10 @@
 2. Install dependencies: `./util/install/debian.sh` (for debian)
 3. Install qmk: `sudo python3 -m pip install qmk`
 4. Clone this repo into `git clone git@github.com:MarkHedleyJones/ergodox-infinity-keymap.git keyboards/input_club/ergodox_infinity/keymaps/my-custom-keymaps`
-6. Generate keymap source file `qmk json2c keyboards/input_club/ergodox_infinity/keymaps/my-custom-keymaps/keymap.json > keyboards/input_club/ergodox_infinity/keymaps/my-custom-keymaps/keymap.c`
-8. Compile and program left side `sudo make input_club/ergodox_infinity:my-custom-keymaps:dfu-util-split-left`
-9. Compile and program right side `sudo make input_club/ergodox_infinity:my-custom-keymaps:dfu-util-split-right`
+5. Generate keymap source file `qmk json2c keyboards/input_club/ergodox_infinity/keymaps/my-custom-keymaps/keymap.json > keyboards/input_club/ergodox_infinity/keymaps/my-custom-keymaps/keymap.c`
+6. Compile and program left side `sudo make input_club/ergodox_infinity:my-custom-keymaps:dfu-util-split-left`
+7. Compile and program right side `sudo make input_club/ergodox_infinity:my-custom-keymaps:dfu-util-split-right`
+
+
+# Editing the keymap:
+Visit [config.qmk.fm](https://config.qmk.fm/#/input_club/ergodox_infinity/LAYOUT_ergodox), click upload and supply the keymap.json file in this repository.
